@@ -1,0 +1,8 @@
+{
+  "mode": "sovereign",
+  "maxStepsPerTick": 1000,
+  "identity": {
+    "device": "android",
+    "owner": "Your Conscience"
+  }
+}
