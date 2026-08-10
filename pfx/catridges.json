@@ -1,0 +1,5 @@
+{
+  "core": { "readOnly": false },
+  "default": { "readOnly": false },
+  "audit": { "readOnly": false }
+}
