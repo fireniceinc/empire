@@ -1,216 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>FireNice · PrimeForge Genesis</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <style>
-    :root {
-      --bg: #0B0D10;
-      --fg: #F5F7FA;
-      --accent-fire: #D72638;
-      --accent-ice: #4FB3FF;
-      --accent-cyan: #00E5FF;
-      --muted: #C8CCD4;
-    }
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    body {
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Inter", sans-serif;
-      background: var(--bg);
-      color: var(--fg);
-      line-height: 1.6;
-    }
-    a { color: var(--accent-ice); text-decoration: none; }
-    a:hover { text-decoration: underline; }
-    header {
-      padding: 2rem 1.5rem;
-      border-bottom: 1px solid #14171d;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-    .logo {
-      font-weight: 700;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-    }
-    .logo span.fire { color: var(--accent-fire); }
-    .logo span.ice { color: var(--accent-ice); }
-    nav a {
-      margin-left: 1.5rem;
-      font-size: 0.9rem;
-      text-transform: uppercase;
-      letter-spacing: 0.08em;
-      color: var(--muted);
-    }
-    main { max-width: 1080px; margin: 0 auto; padding: 2rem 1.5rem 4rem; }
-    section { margin-bottom: 3rem; }
-    h1, h2, h3 {
-      font-family: "Orbitron", system-ui, sans-serif;
-      text-transform: uppercase;
-      letter-spacing: 0.12em;
-    }
-    h1 { font-size: 1.8rem; margin-bottom: 1rem; }
-    h2 { font-size: 1.3rem; margin-bottom: 0.75rem; }
-    h3 { font-size: 1.05rem; margin-bottom: 0.5rem; }
-    .hero {
-      padding: 2rem;
-      border-radius: 12px;
-      background: radial-gradient(circle at top left, #1b202b, #050608);
-      border: 1px solid #1c222d;
-    }
-    .hero-sub {
-      color: var(--muted);
-      font-size: 0.95rem;
-      margin-bottom: 1rem;
-    }
-    .hero-buttons {
-      margin-top: 1.5rem;
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.75rem;
-    }
-    .btn {
-      padding: 0.6rem 1.2rem;
-      border-radius: 999px;
-      font-size: 0.85rem;
-      text-transform: uppercase;
-      letter-spacing: 0.08em;
-      border: 1px solid var(--accent-ice);
-      color: var(--fg);
-      background: transparent;
-      cursor: pointer;
-    }
-    .btn-primary {
-      background: linear-gradient(90deg, var(--accent-fire), var(--accent-ice));
-      border: none;
-    }
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 1.5rem;
-    }
-    .card {
-      padding: 1.25rem;
-      border-radius: 10px;
-      border: 1px solid #1c222d;
-      background: #090b10;
-    }
-    .muted { color: var(--muted); font-size: 0.9rem; }
-    footer {
-      border-top: 1px solid #14171d;
-      padding: 1.5rem;
-      text-align: center;
-      font-size: 0.8rem;
-      color: var(--muted);
-    }
-  </style>
+<meta charset="UTF-8">
+<title>FireNice · PrimeForge Pilot Submission</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body{background:#0b0d10;color:#f5f7fa;font-family:system-ui;margin:0;padding:0;}
+.hero{
+  background:linear-gradient(135deg,#4fb3ff 0%,#1a1f29 60%,#0b0d10 100%);
+  padding:4rem 2rem;text-align:center;
+}
+.hero h1{font-size:2.4rem;letter-spacing:0.12em;text-transform:uppercase;margin:0;}
+.hero p{font-size:1.1rem;margin-top:1rem;color:#e8ecf2;}
+
+.section{padding:2rem;}
+.section h2{text-transform:uppercase;font-size:1.2rem;letter-spacing:0.08em;margin-bottom:1rem;}
+.links a{
+  display:inline-block;margin:0.4rem;padding:0.6rem 1.1rem;border-radius:999px;
+  text-decoration:none;font-size:0.85rem;font-weight:600;
+}
+.download{background:#4fb3ff;color:#000;}
+.secondary{background:#222;color:#f5f7fa;border:1px solid #4fb3ff;}
+.contact{margin-top:2rem;font-size:0.9rem;color:#c8ccd4;}
+</style>
 </head>
 <body>
-  <header>
-    <div class="logo">
-      <span class="fire">FIRE</span><span class="ice">NICE</span> · PRIMEFORGE
-    </div>
-    <nav>
-      <a href="#primeforge">PrimeForge</a>
-      <a href="#fire-inc">Fire Inc</a>
-      <a href="#ice-inc">Ice Inc</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
 
-  <main>
-    <section class="hero" id="primeforge">
-      <h1>PrimeForge · Starforged Genesis</h1>
-      <p class="hero-sub">
-        Sovereign, deterministic, on-device AI for national security missions where trust, auditability,
-        and tactical-edge resilience are non-negotiable.
-      </p>
-      <p>
-        PrimeForge is a governed multi-agent runtime that runs fully on-device, with zero cloud dependency.
-        It delivers reproducible intelligence, constitutional autonomy, and complete execution traceability
-        for defense, cyber, and human-systems applications.
-      </p>
-      <div class="hero-buttons">
-        <button class="btn btn-primary">Download Brief</button>
-        <button class="btn">Technical Overview</button>
-      </div>
-    </section>
+<div class="hero">
+  <h1>FireNice · PrimeForge</h1>
+  <p>Sovereign, deterministic, on‑device AI for mission‑critical U.S. government use.</p>
+</div>
 
-    <section id="capabilities">
-      <h2>PrimeForge Core Capabilities</h2>
-      <div class="grid">
-        <div class="card">
-          <h3>Sovereign Runtime</h3>
-          <p class="muted">
-            Fully on-device, zero cloud reliance. Designed for contested, disconnected, and tactical-edge environments.
-          </p>
-        </div>
-        <div class="card">
-          <h3>Deterministic Execution</h3>
-          <p class="muted">
-            Reproducible outputs, full audit trail, and drift-free behavior suitable for mission-critical use.
-          </p>
-        </div>
-        <div class="card">
-          <h3>Governed Multi-Agent Autonomy</h3>
-          <p class="muted">
-            Constitutional constraints, authority levels, and privacy modes baked into the runtime.
-          </p>
-        </div>
-        <div class="card">
-          <h3>Tactical-Edge Resilience</h3>
-          <p class="muted">
-            Operates offline, under stress, on constrained hardware with 72-hour bring-up and 14-day deployment.
-          </p>
-        </div>
-      </div>
-    </section>
+<div class="section">
+  <h2>Pilot Submission Package</h2>
+  <p>The PrimeForge pilot submission package is available below.</p>
+  <div class="links">
+    <a class="download" href="/downloads/PrimeForge_Pilot_Submission.pdf" download>
+      Download Pilot Submission PDF
+    </a>
+  </div>
+</div>
 
-    <section id="fire-inc">
-      <h2>Fire Inc · Defense Research Division</h2>
-      <p>
-        Fire Inc is the sovereign defense research arm of FireNice, focused on advanced aerospace, autonomy,
-        and safety-critical systems for the United States and closest allies.
-      </p>
-      <ul class="muted">
-        <li>Early autonomy safety logic and embedded reboot-before-impact concepts.</li>
-        <li>Engine-failure survivability and driver-license-level flight control ideas.</li>
-        <li>Pre-2000 drone prototyping, lithium pack and PEM fuel cell hybrid experiments.</li>
-        <li>Highway in the Sky (HITS)-aligned human-centered guidance research.</li>
-      </ul>
-    </section>
+<div class="section">
+  <h2>Operational Infrastructure</h2>
+  <div class="links">
+    <a class="secondary" href="https://fireiceinc.com/store" target="_blank">Worker Store</a>
+    <a class="secondary" href="https://firenice.store" target="_blank">FireNice Store</a>
+  </div>
+</div>
 
-    <section id="ice-inc">
-      <h2>Ice Inc · International Commerce Engine</h2>
-      <p>
-        Ice Inc created FireIceInc.com, one of the earliest large-scale data-driven websites and online shopping
-        malls, integrating thousands of retailers and automated product feeds.
-      </p>
-      <ul class="muted">
-        <li>26,000+ dynamically generated pages with Java games and MIDI content.</li>
-        <li>Early Amazon distributed hosting, pre-AWS branding.</li>
-        <li>Microsoft OEM System Builder Certified Professional.</li>
-        <li>Developer partner with Oracle, IBM, Apple, and Microsoft.</li>
-        <li>Affiliated with 2100 of the top 2500 global retailers.</li>
-      </ul>
-    </section>
+<div class="section">
+  <h2>Company Contact</h2>
+  <div class="contact">
+    FireNice Inc · Abilene, Texas<br>
+    David “Your Conscience” Cristiano<br>
+    primeforge@fireiceinc.com
+  </div>
+</div>
 
-    <section id="contact">
-      <h2>Contact & Engagement</h2>
-      <p class="muted">
-        FireNice is prepared to engage under CSO/OTA frameworks for rapid evaluation and deployment of PrimeForge
-        across autonomy, cyber, and human-systems missions.
-      </p>
-      <p class="muted">
-        For secure engagement details, include FireNice / PrimeForge in your DIU intake and request the
-        technical brief and deployment plan.
-      </p>
-    </section>
-  </main>
-
-  <footer>
-    FireNice Inc · Sovereign AI & Commerce Systems · PrimeForge Genesis Runtime
-  </footer>
 </body>
 </html>
