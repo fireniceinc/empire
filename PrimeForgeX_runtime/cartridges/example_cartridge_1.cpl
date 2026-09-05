@@ -1,0 +1,5 @@
+PROCESS ExampleCartridge1 {
+    STEP InitializeAgent;
+    STEP RunDiagnostics;
+    STEP ExecuteMission;
+}
