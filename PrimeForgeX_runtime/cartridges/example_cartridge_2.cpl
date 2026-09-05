@@ -1,0 +1,5 @@
+PROCESS ExampleCartridge2 {
+    STEP LoadData;
+    STEP Analyze;
+    STEP Report;
+}
