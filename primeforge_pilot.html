@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>PrimeForgeX – Pilot Document</title>
+<title>PrimeForgeX – Pilot Package</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
     body { font-family: Arial, sans-serif; background:#111; color:#eee; margin:0; padding:0; }
@@ -23,7 +23,7 @@
 <body>
 
 <header>
-    <h1>PrimeForgeX – Pilot Document</h1>
+    <h1>PrimeForgeX – Pilot Package</h1>
 </header>
 
 <section>
@@ -37,7 +37,7 @@
             workflows without cloud dependency.
         </p>
         <p>
-            PrimeForgeX is submitted to the Defense Innovation Unit (DIU) for prototype evaluation under the Autonomy,
+            This pilot package presents the complete PrimeForgeX system for DIU evaluation under Autonomy,
             Human-Machine Teaming, and Digital Infrastructure portfolios.
         </p>
     </div>
@@ -45,51 +45,46 @@
     <div class="block">
         <h2>2. Problem Statement</h2>
         <p>
-            Modern autonomous systems rely heavily on cloud compute, remote inference, and non-deterministic agent
-            behavior. This creates operational risks in denied, contested, or secure environments where cloud access
-            is unavailable or undesirable.
+            Modern autonomous systems depend on cloud compute, remote inference, and non-deterministic agent behavior.
+            These dependencies introduce operational risks in denied, contested, or secure environments.
         </p>
         <p>
-            PrimeForgeX addresses these risks by delivering a sovereign, verifiable, deterministic AI kernel that runs
-            entirely on-device, eliminating cloud dependency and enabling predictable, auditable mission behavior.
+            PrimeForgeX eliminates these risks by providing a sovereign, verifiable, deterministic AI kernel that runs
+            entirely on-device, enabling predictable, auditable mission behavior without external dependencies.
         </p>
     </div>
 
     <div class="block">
-        <h2>3. PrimeForgeX Solution Architecture</h2>
+        <h2>3. PrimeForgeX Architecture</h2>
 
         <h3>3.1 CPL – Constitutional Process Language</h3>
         <p>
-            CPL is a deterministic process language for defining agent workflows, cartridges, privacy modes, mission
-            logic, and state transitions. It ensures verifiable, predictable behavior and enables constitutional
-            constraints on what agents are allowed to do.
+            CPL defines agent workflows, cartridges, privacy modes, mission logic, and state transitions. It ensures
+            deterministic, verifiable behavior and enforces constitutional constraints across all agents.
         </p>
 
         <h3>3.2 CPO – Constitutional PrimeForgeX Kernel</h3>
         <p>
             The CPO kernel provides deterministic execution, agent isolation, cartridge sandboxing, mission-mode
-            enforcement, and on-device inference routing. It is the core runtime that guarantees constitutional
-            behavior across all agents and cartridges.
+            enforcement, and on-device inference routing. It guarantees constitutional behavior across the entire system.
         </p>
 
         <h3>3.3 Multi-Agent Runtime</h3>
         <p>
-            PrimeForgeX supports multiple coordinated agents, including Worker AI, Creator AI, Enterprise AI, Tactical
-            AI, and Constitutional AI. Agents communicate through deterministic message-passing rather than uncontrolled
-            stochastic drift.
+            PrimeForgeX supports Worker AI, Creator AI, Enterprise AI, Tactical AI, and Constitutional AI. Agents
+            communicate through deterministic message-passing, ensuring predictable coordination.
         </p>
 
         <h3>3.4 Cartridge System</h3>
         <p>
             Cartridges define mission workflows, operational modes, privacy envelopes, and tactical behaviors. Each
-            cartridge is signed, verifiable, and sandboxed, enabling secure deployment of mission logic without
-            compromising the kernel.
+            cartridge is signed, verifiable, and sandboxed for secure deployment.
         </p>
 
         <h3>3.5 Sovereign On-Device Execution</h3>
         <p>
-            PrimeForgeX runs offline, without cloud, without external inference, and without remote dependencies. This
-            enables operation in denied environments, contested networks, tactical edge scenarios, and secure facilities.
+            PrimeForgeX operates fully offline, without cloud or external inference. This enables deployment in denied
+            environments, contested networks, tactical edge scenarios, and secure facilities.
         </p>
     </div>
 
@@ -111,8 +106,8 @@
     <div class="block">
         <h2>5. Deployment Model</h2>
         <p>
-            PrimeForgeX supports deployment on Android, Linux, Windows, tactical devices, edge compute units, and secure
-            offline systems. The kernel footprint is designed to be lightweight:
+            PrimeForgeX supports Android, Linux, Windows, tactical devices, edge compute units, and secure offline
+            systems. The runtime footprint is lightweight:
         </p>
         <ul>
             <li>&lt; 50MB kernel</li>
@@ -125,13 +120,14 @@
         <h2>6. Security Model</h2>
         <p>
             PrimeForgeX uses deterministic execution, signed cartridges, constitutional constraints, agent isolation,
-            zero-trust runtime principles, and offline inference. By removing cloud dependency, it eliminates remote
-            inference risk, cloud compromise exposure, and unpredictable agent drift.
+            zero-trust runtime principles, and offline inference. Removing cloud dependency eliminates remote inference
+            risk, cloud compromise exposure, and unpredictable agent drift.
         </p>
     </div>
 
     <div class="block">
         <h2>7. DIU-Relevant Use Cases</h2>
+
         <h3>7.1 Tactical Edge Autonomy</h3>
         <p>Offline autonomous workflows for contested or denied environments.</p>
 
@@ -139,7 +135,7 @@
         <p>AI operation without cloud or external inference in high-security facilities.</p>
 
         <h3>7.3 Human-Machine Teaming</h3>
-        <p>Deterministic, predictable agent behavior that can be trusted by operators.</p>
+        <p>Deterministic, predictable agent behavior trusted by operators.</p>
 
         <h3>7.4 Enterprise Workflow Automation</h3>
         <p>Constitutional multi-agent orchestration for complex enterprise processes.</p>
@@ -149,17 +145,21 @@
     </div>
 
     <div class="block">
-        <h2>8. Pilot Deliverables</h2>
-        <p>You will link these artifacts in GitHub and on the pilot webpage:</p>
+        <h2>8. Pilot Package Deliverables</h2>
+        <p>The PrimeForgeX pilot package includes the following deliverables:</p>
         <ul>
-            <li>Pitch Deck (PDF)</li>
-            <li>Executive Summary (PDF)</li>
-            <li>Architecture Overview (PDF)</li>
-            <li>CPL Specification (PDF)</li>
-            <li>CPO Kernel Specification (PDF)</li>
-            <li>PrimeForgeX Runtime Build</li>
-            <li>PrimeForgeX Source Code</li>
-            <li>PrimeForgeX Cartridge Examples</li>
+            <li>PrimeForgeX Pilot Document (this file)</li>
+            <li><a href="cpl_language_specification.html">CPL Language Specification</a></li>
+            <li><a href="cpo_kernel_specification.html">CPO Kernel Specification</a></li>
+            <li><a href="seed_agent_overview.html">Seed Agent Overview</a></li>
+            <li><a href="proof_determinism.html">Determinism Proof</a></li>
+            <li><a href="proof_multi_agent.html">Multi-Agent Proof</a></li>
+            <li><a href="proof_governance.html">Governance Proof</a></li>
+            <li><a href="proof_cartridges.html">Cartridge System Proof</a></li>
+            <li><a href="environment_proofs.html">Environment Proofs</a></li>
+            <li>PrimeForgeX Runtime Build (included in repository)</li>
+            <li>PrimeForgeX Source Code (included in repository)</li>
+            <li>PrimeForgeX Cartridge Examples (included in repository)</li>
             <li>Worker AI Store:
                 <a href="http://worker-ai-beryl.vercel.app/store/" target="_blank">
                     http://worker-ai-beryl.vercel.app/store/
@@ -199,16 +199,6 @@
             Phone: <a href="tel:3252732731">325‑273‑2731</a><br>
             Email: <a href="mailto:theonlineyards@outlook.com">theonlineyards@outlook.com</a><br>
             Backup: <a href="mailto:fireniceinc@msn.com">fireniceinc@msn.com</a>
-        </p>
-    </div>
-
-    <div class="block">
-        <h2>12. Summary</h2>
-        <p>
-            PrimeForgeX is a sovereign, deterministic, on-device AI kernel designed for tactical autonomy, secure offline
-            operation, and verifiable agent behavior. It provides DIU with a prototype-ready, mission-ready constitutional
-            AI system capable of replacing cloud-dependent autonomy pipelines with a secure, predictable, and auditable
-            runtime.
         </p>
     </div>
 
